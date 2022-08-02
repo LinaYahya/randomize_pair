@@ -1,45 +1,46 @@
 const namesOfGroupA = [
-  "Abdallah Rabah",
-  "Abdulrahman Kallousa",
-  "Amjad Hassan",
-  "Deena Alghazali",
-  "Fady Alwazir",
-  "Farah Shaqoura",
-  "Ghada Attallah",
-  "Hani Olwan",
-  "Ibrahim Jarada",
-  "Khaled EL-Khudary",
-  "Mahmoud AlDabba",
-  "Mayar Kabaja",
-  "Mohammed Hamada",
-  "Monther Alzamli",
-  "Rand AbuAlArraj",
-  "Saleh Marouf",
-  "Salma issa",
-  "Wessal Elkhatib",
-  "Yosra Jaradh",
-  "Zaher Abuamro",
-];
-const namesOfGroupB = [
-  "Abedalrahman Shamia",
-  "Ahmed Qeshta",
-  "Ayman Fahgan",
-  "Braa ferwana",
-  "Emran Elmasri",
-  "IBRAHIM ALHELOU",
-  "Israa Rayya",
-  "Jehad Abushaqra",
-  "Karam Zomlut",
-  "Mahmoud Alhato",
-  "Manar Abedalhadi",
-  "Maram Msabeh",
-  "Mohamed Helles",
-  "Mohammad AlHabil",
-  "mostafa qanoo",
-  "Nabil AbuShaban",
-  "Nada Abuzaid",
-  "Najlaa Abuouda",
-  "Rawan Algharabli",
+  "Aaya M. Elsharief",
+  "AbdAl-Ilah Monuir Abu AL-Hussein",
+  "Abdalhakim Abumusameh",
+  "Abdallah Ibrahim Alshawaf",
+  "Abdelhaleem Elderawi",
+  "Ahmed B. Abu Sharar",
+  "Ali Sadaallah Al Shanti",
+  "Ali Shbair",
+  "Aseel Abdulsattar Abusahmoud",
+  "Asil Mustafa alghoul",
+  "Bakeza Saeed Yousef Diazada",
+  "Basil fayez hassan Alshiekh",
+  "Bayan Abd EL Bary",
+  "Fadi H. Zaqout",
+  "HusamEddin kamal Ahmad Abu Mughessib",
+  " Ibtisam Hemmo",
+  "mahmoud hesham hassan hammad",
+  "Mai Mohammed Abu Abed",
+  "Mai Yahia Ismail Elhajeen",
+  "Mohammad Alwadia",
+  "mohammed alagha",
+  "Mohammed Jaber",
+  "Mohammed Omar Khalil Balousha",
+  "mohmmed abd Al-rahman al-shorafa",
+  "Mostafa Omar Balousha",
+  "Mustafa Salem",
+  "Nada suhail khalil Ayesh",
+  "nader emad shakshak",
+  "Nagham Abuwarda",
+  "Rabee A. R. ALBHAISI",
+  "Riyad Mohammed Salem",
+  "Said Mahmoud Said Madi",
+  "Saif Al-Din Al-Hayek",
+  "Salsabeel omar alnajjar",
+  "sami hannoush",
+  "Sara Dhaman",
+  "Shams Elkoudary",
+  "Shatha Khaled Eqdaih",
+  " Tareq Hisham Abu Aqlain",
+  "Tariq esa mohammed abu sada",
+  "Yazeed Sobhi Al-Abed El-Haj Salem",
+  "Zayan Hassan Alaraishy",
 ];
 
 const randomizeNames = (names) => {
@@ -57,8 +58,6 @@ const randomizeNames = (names) => {
 
 const cells = document.querySelectorAll("th");
 const randomABtn = document.getElementById("random-a");
-const randomBBtn = document.getElementById("random-b");
-
 const createTable = (names) => {
   for (let i = 0; i < names.length; i++) {
     cells[i].textContent = names[i];
@@ -73,7 +72,4 @@ randomABtn.onclick = () => {
   clearCells();
   createTable(randomizeNames(namesOfGroupA));
 };
-randomBBtn.onclick = () => {
-  clearCells();
-  createTable(randomizeNames(namesOfGroupB));
-};
+
